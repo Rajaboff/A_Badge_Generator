@@ -1,5 +1,5 @@
 @font-face {
-    font-family: "";
+    font-family: "Axiforma";
     src: url("../../../assets/Kastelov-Axiforma-ExtraBold.ttf");
 }
 
@@ -116,6 +116,7 @@ button:hover {
 }
 
 #name {
+    font-family: "Axiforma", sans-serif;
     font-style: normal;
     font-weight: bold;
     line-height: 22px;

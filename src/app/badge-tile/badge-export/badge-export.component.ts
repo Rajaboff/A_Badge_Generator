@@ -64,7 +64,7 @@ export class BadgeExportComponent {
       for (let i = 0; i < this.badges.length; i++) {
         p.textContent = this.badges[i].name;
         html2canvas(can, {
-          scale: 15
+          scale: 10
         }).then(canvas => {
           var ctx = canvas.getContext("2d");
           ctx.beginPath();
@@ -93,7 +93,7 @@ export class BadgeExportComponent {
     else {
 
       html2canvas(can, {
-        scale: 15
+        scale: 10
       }).then(canvas => {
 
         var doc = new jspdf.jsPDF({
