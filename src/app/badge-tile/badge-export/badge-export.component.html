@@ -1,0 +1,39 @@
+<div class="wrap" id="wrap">
+    <div class="add-badge">
+        <div class="cur-badge" *ngFor="let badge of badges" [id]='badge' (click)='curBadgeClick(badge)'
+            [ngStyle]="{'border': badge.border, 'background-color': badge.bgColor}">
+            <p>{{badge.name[0] | uppercase}}</p>
+        </div>
+
+        <div class="cur-badge" id="addBadge" (click)='addBadge()'>
+            +
+        </div>
+
+        <div class="cur-badge" id="delBadge" (click)='delBadge(inputName)' *ngIf="badges.length > 1">
+            -
+        </div>
+    </div>
+    <div class="input_tile">
+        <div class="input_name" #inputName>
+            <p id="workerName">Номи ҳамкорамон</p>
+            <input type="text" placeholder="Номи ҳамкор..." #inpName [(ngModel)]='badges[curbadge].name'
+                (input)="mistakeInput(inputName)" maxlength='18'>
+        </div>
+        <p id="mistake">{{mistakeText}}</p>
+    </div>
+
+    <div class="preview">
+        <p>Намуди пешакӣ</p>
+        <div class="line"></div>
+        <div class="badge-editor" id="">
+            <div id="badge_preview">
+                <img src="../../../assets/badge.svg" alt="" id="badge">
+                <p id="name" #nam [ngStyle]="{'font-size': fontSize + 'pt'}">{{badges[curbadge].name || 'Ном'}}</p>
+            </div>
+        </div>
+    </div>
+    
+    <div class="btn-div">
+        <button (click)=' func2()'>Экспорт PDF</button>
+    </div>
+</div>

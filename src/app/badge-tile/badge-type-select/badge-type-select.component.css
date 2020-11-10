@@ -1,0 +1,68 @@
+.wrap {
+    margin-top: 10px;
+}
+
+.badge {
+    width: 220px;
+    height: 90px;
+    border: 1px solid #DFE4E9;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+    margin-top: 15px;
+}
+
+.badge:hover {
+    background-color: #F4FBF9;
+    border: 2px solid #39B980;
+    cursor: pointer;
+}
+
+.badge:last-child {
+    margin-right: 0;
+}
+
+.icon {
+    display: flex;
+    justify-content: center;
+    width: 40%;
+}
+
+.info {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #222;
+}
+
+.title {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 150%;
+    color: #222;
+}
+
+.badge_types {
+    display: flex;
+}
+
+@media screen and (max-width: 550px) {
+    .info {
+        font-size: 13px;
+    }
+
+    .badge {
+        width: 230px;
+    }
+
+    .icon {
+        width: 37%;
+    }
+
+    .icon > img {
+        width: 35px;
+    }
+}

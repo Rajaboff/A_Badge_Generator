@@ -1,0 +1,178 @@
+@font-face {
+    font-family: "";
+    src: url("../../../assets/Kastelov-Axiforma-ExtraBold.ttf");
+}
+
+.wrap {
+    width: 100%;
+    margin-top: 60px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.input_tile, .preview {
+    width: 100%;
+}
+
+.input_name {
+    width: 100%;
+    height: 68px;
+    border: 1px solid #A6ABB0;
+    border-radius: 4px;
+    padding: 7px 25px;
+}
+
+.input_name > p{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 24px;
+    color: #A6ABB0;
+}
+
+.input_name > input {
+    width: 100%;
+    height: 25px;
+    border: none;
+    outline: none;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #222;
+}
+
+#mistake {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 16px;
+    color: #FF4444;
+    margin: 15px 0;
+}
+
+button {
+    width: 200px;
+    height: 55px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 20px;
+    background: #39B980;
+    border-radius: 4px;
+    border: none;
+    outline: none;
+    color: white;
+    cursor: pointer;
+    margin: 50px 0;
+}
+
+button:hover {
+    background: #32a571;
+}
+
+.preview {
+    height: 430px;
+    border: 1px solid #DFE4E9;
+    border-radius: 4px;
+    padding: 0 25px;
+    margin-top: 35px;
+}
+
+.preview > p {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 22px;
+    color: #73787D;
+    margin: 15px 0;
+}
+
+.line {
+    width: 100%;
+    height: 1px;
+    background-color: #DFE4E9;
+}
+
+#badge_preview {
+    position: relative;
+    height: 256px;
+    width: 374px;
+}
+
+#badge {
+    height: 256px;
+    width: 374px;
+    border: 1px solid #DFE4E9;
+}
+
+.badge-editor{
+    width: 100%;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#name {
+    font-style: normal;
+    font-weight: bold;
+    line-height: 22px;
+    color: rgb(24, 24, 24);   
+    position: absolute;
+    left: 0;
+    bottom: 55px;
+    width: 100%;
+    text-align: center;
+}
+
+.btn-div {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.add-badge {
+    width: 100%;
+    margin-bottom: 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.cur-badge {
+    width: 50px;
+    height: 50px;
+    border: 1px solid #dbdde0;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 25px;
+    border-radius: 3px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+#addBadge {
+    border: none;
+    background-color: #32a571;
+    color: white;
+    font-size: 1.8em;
+}
+
+#addBadge:hover {
+    background-color: #2e9466;
+}
+
+#delBadge {
+    border: none;
+    background-color: tomato;
+    color: white;
+    font-size: 1.8em;
+}
+
+#delBadge:hover {
+    background-color: rgb(231, 89, 64);
+}

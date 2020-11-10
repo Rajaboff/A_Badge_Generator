@@ -1,0 +1,14 @@
+<div class="wrap">
+    <h1 class="title">Намуди бейджикро интихоб кунед</h1>
+    <div class="badge_types">
+        <div class="badge" *ngFor="let size of sizes" (click)='func(size)' [id]='size.id' [ngStyle]="{'background-color': size.bgColor, 'border': size.border}">
+            <div class="icon">
+                <img src="../../../assets/badge_icon.svg" alt="Badge">
+            </div>
+            <div class="info">
+                <p>Бейджик</p>
+                <p>{{size.size}}</p>
+            </div>
+        </div>
+    </div>
+</div>
